@@ -1,0 +1,36 @@
+[
+  {
+    "_id": "5ba8b2e7270000110019ed3f",
+    "businessUnitId": "5ba8b22f3e46833651fdf9b8",
+    "name": "All",
+    "public": true,
+    "default": true,
+    "tabType": "Order",
+    "permission": "traffic.tab.default.view.all",
+    "marketSid": "270",
+    "createdAt": "2018-09-24T09:48:23.626+0000",
+    "onlyArchivedDeliveryItems": false
+  },
+  {
+    "_id": "5ba8b2e7270000110019ed40",
+    "createByUserId": "5ba8b2e23e46833651fdf9f9",
+    "name": "My Orders",
+    "systemConditions": {
+      "type": "condition",
+      "body": {
+        "field": {
+          "path": "assignedUsers._id",
+          "name": "assignedUsers",
+          "type": "String"
+        },
+        "condition": "Match",
+        "value": "5ba8b2e23e46833651fdf9f9"
+      }
+    },
+    "public": false,
+    "default": true,
+    "tabType": "MyOrders",
+    "createdAt": "2018-09-24T09:48:23.637+0000",
+    "onlyArchivedDeliveryItems": false
+  }
+]
